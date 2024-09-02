@@ -14,6 +14,12 @@
 		BC12784F2C859FF600A056F3 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12784E2C859FF600A056F3 /* SwiftUIPracticeTests.swift */; };
 		BC1278592C859FF600A056F3 /* SwiftUIPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1278582C859FF600A056F3 /* SwiftUIPracticeUITests.swift */; };
 		BC12785B2C859FF600A056F3 /* SwiftUIPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12785A2C859FF600A056F3 /* SwiftUIPracticeUITestsLaunchTests.swift */; };
+		BC1278692C85A05700A056F3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1278682C85A05700A056F3 /* SplashView.swift */; };
+		BC12786C2C85A39100A056F3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12786B2C85A39100A056F3 /* OnboardingView.swift */; };
+		BC12786F2C85A43900A056F3 /* NavigationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12786E2C85A43900A056F3 /* NavigationWrapper.swift */; };
+		BC1278712C85AC2C00A056F3 /* NavigationBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1278702C85AC2C00A056F3 /* NavigationBarWrapper.swift */; };
+		BC1278742C85B20100A056F3 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1278732C85B20100A056F3 /* NextButton.swift */; };
+		BC1278772C85E5F500A056F3 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1278762C85E5F500A056F3 /* CompleteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		BC1278542C859FF600A056F3 /* SwiftUIPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1278582C859FF600A056F3 /* SwiftUIPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITests.swift; sourceTree = "<group>"; };
 		BC12785A2C859FF600A056F3 /* SwiftUIPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC1278682C85A05700A056F3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BC12786B2C85A39100A056F3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BC12786E2C85A43900A056F3 /* NavigationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWrapper.swift; sourceTree = "<group>"; };
+		BC1278702C85AC2C00A056F3 /* NavigationBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWrapper.swift; sourceTree = "<group>"; };
+		BC1278732C85B20100A056F3 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		BC1278762C85E5F500A056F3 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,10 @@
 		BC12783C2C859FF400A056F3 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				BC1278722C85B1EE00A056F3 /* Common */,
+				BC12786A2C85A37300A056F3 /* Onboarding */,
+				BC1278672C85A03100A056F3 /* Splash */,
+				BC1278752C85E5E200A056F3 /* Complete */,
 				BC12783D2C859FF400A056F3 /* SwiftUIPracticeApp.swift */,
 				BC12783F2C859FF400A056F3 /* ContentView.swift */,
 				BC1278412C859FF500A056F3 /* Assets.xcassets */,
@@ -125,6 +141,48 @@
 				BC12785A2C859FF600A056F3 /* SwiftUIPracticeUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIPracticeUITests;
+			sourceTree = "<group>";
+		};
+		BC1278672C85A03100A056F3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BC1278682C85A05700A056F3 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BC12786A2C85A37300A056F3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC12786B2C85A39100A056F3 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BC12786D2C85A42900A056F3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BC12786E2C85A43900A056F3 /* NavigationWrapper.swift */,
+				BC1278702C85AC2C00A056F3 /* NavigationBarWrapper.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BC1278722C85B1EE00A056F3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC12786D2C85A42900A056F3 /* Navigation */,
+				BC1278732C85B20100A056F3 /* NextButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC1278752C85E5E200A056F3 /* Complete */ = {
+			isa = PBXGroup;
+			children = (
+				BC1278762C85E5F500A056F3 /* CompleteView.swift */,
+			);
+			path = Complete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1278402C859FF400A056F3 /* ContentView.swift in Sources */,
+				BC1278772C85E5F500A056F3 /* CompleteView.swift in Sources */,
+				BC12786C2C85A39100A056F3 /* OnboardingView.swift in Sources */,
+				BC1278742C85B20100A056F3 /* NextButton.swift in Sources */,
+				BC12786F2C85A43900A056F3 /* NavigationWrapper.swift in Sources */,
+				BC1278712C85AC2C00A056F3 /* NavigationBarWrapper.swift in Sources */,
 				BC12783E2C859FF400A056F3 /* SwiftUIPracticeApp.swift in Sources */,
+				BC1278692C85A05700A056F3 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
